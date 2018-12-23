@@ -19,7 +19,10 @@ class _DetailState extends State<DetailWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Detail'),
+          title: Text(
+            'Detail',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.share),

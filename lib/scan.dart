@@ -21,7 +21,10 @@ class _ScanState extends State<ScanScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
-          title: new Text('QR Code Scanner'),
+          title: new Text(
+            'QR Code Scanner',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         body: new Center(
           child: new Column(
@@ -31,7 +34,7 @@ class _ScanState extends State<ScanScreen> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 child: RaisedButton(
-                    color: Colors.blue,
+                    color: Colors.green,
                     textColor: Colors.white,
                     splashColor: Colors.blueGrey,
                     onPressed: scan,

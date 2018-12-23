@@ -9,7 +9,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('QR Code Scanner & Generator'),
+        title: Text(
+          'QR Code Scanner & Generator',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
       body: Center(
           child: Column(
